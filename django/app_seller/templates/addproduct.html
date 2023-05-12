@@ -1,0 +1,109 @@
+{% extends "seller_header_footer.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="page-banner-area bg-1">
+<div class="container">
+<div class="page-banner-content">
+<h1>Add Product</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li>Add Product</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="register-area ptb-70">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-9 col-lg-10">
+<div class="row">
+<div class="col-lg-6">
+<div class="register-left-content">
+<div class="register-image">
+<img src="{{user_data.image.url}}" alt="image">
+</div>
+<div class="register-btns">
+<!-- <ul>
+<li>
+<a href="https://www.facebook.com/" target="_blank">Continue with Facebook</a>
+</li>
+<li>
+<a href="https://www.google.com/" target="_blank">Continue with Google</a>
+</li>
+<li>
+<a href="https://www.apple.com/" target="_blank">Continue with Apple</a>
+</li>
+</ul> -->
+</div>
+</div>
+</div>
+
+<p style="color: rgb(16, 16, 16); font-size:24px; font-style:italic;">{{msg}}</p>
+<div class="col-lg-6">
+<div class="register-content">
+<!-- <h3>Create An Account</h3> -->
+<!-- <p>Already have an account? <a href="login.html">Login</a></p> -->
+<form action="{% url 'addproduct' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+<div class="form-group">
+<label>name</label>
+<input type="text" class="form-control" name = "pname" value="">
+</div>
+<div class="form-group">
+<label>price</label>
+<input type="text" class="form-control" value="" name="price" >
+</div>
+<div class="form-group">
+    <label>Image Upload*</label>
+    <input type="file" class="form-control" name="pic">
+    </div>
+<div class="form-group">
+<label>description</label>
+<input type="textarea" class="form-control" name="desc">
+</div>
+<!-- <div class="form-group">
+<label>Password *</label>
+<input type="password" class="form-control" name="pass">
+</div>
+<div class="form-group">
+<label>Confirm Password *</label>
+<input type="password" class="form-control" name="cpass">
+</div> -->
+<!-- <div class="form-group">
+<label>Security Code *</label>
+<input type="text" class="form-control">
+</div>
+<div class="form-group">
+<ul class="d-flex justify-content-between">
+<li>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+I agree to <a href="terms-condition.html">terms & policy</a>
+</label>
+</div>
+</li> -->
+<!-- <li><a href="about.html">Learn More</a></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+<button type="submit" class="default-btn style5">Add Product</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+
+
+

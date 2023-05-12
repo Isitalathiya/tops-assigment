@@ -1,0 +1,136 @@
+{% extends "header_footer.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="page-banner-area bg-1">
+    <div class="container">
+        <div class="page-banner-content">
+            <h1>Contact Us</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="contact-area pt-70 pb-45">
+    <div class="container">
+        <div class="section-title style2 text-center">
+            <span class="sub-title">Contact Us</span>
+            <h2>Don’t Hesitate To Contact Us</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="single-contact-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Our Location</h3>
+                        <span>CA 560 bush st & 20th ave, apt 5 san francisco,230909, canada</span>
+                    </div>
+                </div>
+                <div class="single-contact-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Sent Us Email</h3>
+                        <a
+                            href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#91f9f4fdfdfed1f4e7f8f3bff2fefc"><span
+                                class="__cf_email__"
+                                data-cfemail="d1b9b4bdbdbe91b4a7b8b3ffb2bebc">[email&#160;protected]</span></a>
+                        <a
+                            href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#1871767e77587d6e717a367b7775"><span
+                                class="__cf_email__"
+                                data-cfemail="b7ded9d1d8f7d2c1ded599d4d8da">[email&#160;protected]</span></a>
+                    </div>
+                </div>
+                <div class="single-contact-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Phone Number</h3>
+                        <a href="tel:09809809809">098-098-098-09</a>
+                        <a href="tel:09809809809878">098-098-098-098-78</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="contact-form">
+                    <p>{{msg}}</p>
+
+                    <form action="{% url 'contact_us' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control" required
+                                        data-error="Please enter your name" placeholder="Name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" required
+                                        data-error="Please enter your email" placeholder="Email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="pnum" id="phone_number" required
+                                        data-error="Please enter your number" placeholder="Phone" class="form-control">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="sname" id="msg_subject" placeholder="Subject"
+                                        class="form-control" required data-error="Please enter your subject">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea name="mg" class="form-control" id="message" cols="30" rows="6"
+                                    placeholder="Message" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input name="gridCheck" value="I agree to the terms and privacy policy."
+                                        class="form-check-input" type="checkbox" id="gridCheck" required>
+                                    <label class="form-check-label" for="gridCheck">
+                                        I accept the <a href="terms-condition.html">terms and conditions</a> in our <a
+                                            href="privacy-policy.html">privacy policy</a>
+                                    </label>
+                                    <div class="help-block with-errors gridCheck-error"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="default-btn style5">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="map-area">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689886.6482586036!2d18.222869767132007!3d48.82306781109595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f29294ef3939%3A0xdf8d87a1716ba6a0!2sZakopane%2C%20Poland!5e0!3m2!1sen!2sbd!4v1670930289202!5m2!1sen!2sbd"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+{% endblock %}

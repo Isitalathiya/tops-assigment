@@ -1,0 +1,58 @@
+
+{% extends "header_footer.html" %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="page-banner-area bg-1">
+<div class="container">
+<div class="page-banner-content">
+<h1>Order Tracking</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li>Order Tracking</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="order-tracking-area ptb-70">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-11 col-lg-12">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<div class="order-tracking-img">
+<img src="{% static 'assets/images/order-tracking-img.webp' %}" alt="image">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="order-tracking-content">
+<h3>Track Your Order</h3>
+<p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+<form>
+<div class="form-group">
+<label>Order Id</label>
+<input type="text" placeholder="Found in your order confirmation email." class="form-control">
+</div>
+<div class="form-group">
+<label>Billing Email</label>
+<input type="text" placeholder="Email you used during checkout." class="form-control">
+</div>
+<div class="btn-and-content d-flex align-items-center">
+<button type="submit" class="default-btn style5">Track Order</button>
+<p>See Our <a href="privacy-policy.html">Privacy Policy</a></p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+
+

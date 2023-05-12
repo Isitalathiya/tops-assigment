@@ -1,0 +1,282 @@
+{% extends "header_footer.html" %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="page-banner-area bg-1">
+<div class="container">
+<div class="page-banner-content">
+<h1>Shopping Cart</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li>Cart</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="cart-area pt-70 pb-45">
+<div class="container">
+<div class="row">
+<div class="col-lg-8">
+<div class="cart-table table table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th scope="col">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="productCheck1">
+<label class="form-check-label" for="productCheck1">
+Product
+</label>
+</div>
+</th>
+<th scope="col">Unit Price</th>
+<th scope="col">Quantity</th>
+<th scope="col">Subtotal</th>
+<th scope="col">Remove</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="image-and-content d-flex align-items-center">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="productCheck2">
+</div>
+<div class="products-image">
+<a href="product-with-sidebar.html"><img src="{% static 'assets/images/shop/shop-image-71.webp' %}" alt="image"></a>
+</div>
+<div class="products-content">
+<h3><a href="product-with-sidebar.html">Women Combo Sunglass</a></h3>
+<span class="in-stock">IN STOCK</span>
+<div class="rating">
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+</div>
+</div>
+</td>
+<td class="price">$25.00</td>
+<td class="quantity">
+<div class="input-counter">
+<span class="minus-btn"><i class="fa-solid fa-chevron-down"></i></span>
+<input type="text" min="1" value="1">
+<span class="plus-btn"><i class="fa-solid fa-chevron-up"></i></span>
+</div>
+</td>
+<td class="total">$25.00</td>
+<td class="remove">
+<a href="#">
+<i class="fa-solid fa-trash-can"></i>
+</a>
+</td>
+</tr>
+<tr>
+<td class="image-and-content d-flex align-items-center">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="productCheck3">
+</div>
+<div class="products-image">
+<a href="product-with-sidebar.html"><img src="{% static 'assets/images/shop/shop-image-72.webp' %}" alt="image"></a>
+</div>
+<div class="products-content">
+<h3><a href="product-with-sidebar.html">Women Combo Sunglass</a></h3>
+<span class="in-stock">IN STOCK</span>
+<div class="rating">
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+</div>
+</div>
+</td>
+<td class="price">$40.00</td>
+<td class="quantity">
+<div class="input-counter">
+<span class="minus-btn"><i class="fa-solid fa-chevron-down"></i></span>
+<input type="text" min="1" value="1">
+<span class="plus-btn"><i class="fa-solid fa-chevron-up"></i></span>
+</div>
+</td>
+<td class="total">$40.00</td>
+<td class="remove">
+<a href="#">
+<i class="fa-solid fa-trash-can"></i>
+</a>
+</td>
+</tr>
+<tr>
+<td class="image-and-content d-flex align-items-center">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="productCheck3">
+</div>
+<div class="products-image">
+<a href="product-with-sidebar.html"><img src="{% static 'assets/images/shop/shop-image-73.webp' %}" alt="image"></a>
+</div>
+<div class="products-content">
+<h3><a href="product-with-sidebar.html">Pinkol Granite Glass</a></h3>
+<span class="in-stock">IN STOCK</span>
+<div class="rating">
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+</div>
+</div>
+</td>
+<td class="price">$42.00</td>
+<td class="quantity">
+<div class="input-counter">
+<span class="minus-btn"><i class="fa-solid fa-chevron-down"></i></span>
+<input type="text" min="1" value="1">
+<span class="plus-btn"><i class="fa-solid fa-chevron-up"></i></span>
+</div>
+</td>
+<td class="total">$42.00</td>
+<td class="remove">
+<a href="#">
+<i class="fa-solid fa-trash-can"></i>
+</a>
+</td>
+</tr>
+<tr>
+<td class="image-and-content d-flex align-items-center">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="productCheck3">
+</div>
+<div class="products-image">
+<a href="product-with-sidebar.html"><img src="{% static 'assets/images/shop/shop-image-74.webp' %}" alt="image"></a>
+</div>
+<div class="products-content">
+<h3><a href="product-with-sidebar.html">Embroidared Glasses</a></h3>
+<span class="in-stock">IN STOCK</span>
+<div class="rating">
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+</div>
+</div>
+</td>
+<td class="price">$32.00</td>
+<td class="quantity">
+<div class="input-counter">
+<span class="minus-btn"><i class="fa-solid fa-chevron-down"></i></span>
+<input type="text" min="1" value="1">
+<span class="plus-btn"><i class="fa-solid fa-chevron-up"></i></span>
+</div>
+</td>
+<td class="total">$32.00</td>
+<td class="remove">
+<a href="#">
+<i class="fa-solid fa-trash-can"></i>
+</a>
+</td>
+</tr>
+<tr>
+<td class="image-and-content d-flex align-items-center">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="productCheck3">
+</div>
+<div class="products-image">
+<a href="product-with-sidebar.html"><img src="{% static 'assets/images/shop/shop-image-75.webp' %}" alt="image"></a>
+</div>
+<div class="products-content">
+ <h3><a href="product-with-sidebar.html">Phenomenal Round Glass</a></h3>
+<span class="in-stock">IN STOCK</span>
+<div class="rating">
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+</div>
+</div>
+</td>
+<td class="price">$43.00</td>
+<td class="quantity">
+<div class="input-counter">
+<span class="minus-btn"><i class="fa-solid fa-chevron-down"></i></span>
+<input type="text" min="1" value="1">
+<span class="plus-btn"><i class="fa-solid fa-chevron-up"></i></span>
+</div>
+</td>
+<td class="total">$43.00</td>
+<td class="remove">
+<a href="#">
+<i class="fa-solid fa-trash-can"></i>
+</a>
+</td>
+</tr>
+<tr>
+<td class="image-and-content d-flex align-items-center">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="productCheck3">
+</div>
+<div class="products-image">
+<a href="product-with-sidebar.html"><img src="{% static 'assets/images/shop/shop-image-76.webp' %}" alt="image"></a>
+</div>
+<div class="products-content">
+<h3><a href="product-with-sidebar.html">Men’s Pair Round Glass</a></h3>
+<span class="in-stock">IN STOCK</span>
+<div class="rating">
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+<i class="flaticon-star-1"></i>
+</div>
+</div>
+</td>
+<td class="price">$35.00</td>
+<td class="quantity">
+<div class="input-counter">
+<span class="minus-btn"><i class="fa-solid fa-chevron-down"></i></span>
+<input type="text" min="1" value="1">
+<span class="plus-btn"><i class="fa-solid fa-chevron-up"></i></span>
+</div>
+ </td>
+<td class="total">$35.00</td>
+<td class="remove">
+<a href="#">
+<i class="fa-solid fa-trash-can"></i>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="cart-btn-list d-flex justify-content-between">
+<li>
+<button class="default-btn style5">Continue Shopping</button>
+</li>
+<li>
+<button class="default-btn style5">Update Cart</button>
+</li>
+</ul>
+</div>
+<div class="col-lg-4">
+<div class="check-out-summary">
+<h3>Check Out Summary</h3>
+<ul>
+<li>Subtotal <span>$118.00</span></li>
+<li>Shipping <span>$00.00</span></li>
+<li>Total <span>$118.00</span></li>
+<li>Payble Total <span>$118.00</span></li>
+</ul>
+<button class="default-btn style5">Proceed To Checkout</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+
+
